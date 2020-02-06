@@ -9,15 +9,12 @@ int main(void)
 
 	for (n = 48 ; n <= 102  ; n++)
 	{
-		if (n == 57)
+		if (n == 58)
 		{
-			n += 40;
+			n += 39;
 		}
 		putchar(n);
 	}
-	if (n > 102)
-	{
-		putchar('\n');
-	}
+	putchar('\n');
 	return (0);
 }
