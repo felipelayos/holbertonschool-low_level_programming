@@ -11,11 +11,11 @@ int main(void)
 	{
 		if (c == 'q')
 		{
-		c++;			
+		c++;
 		}
 		else if (c == 'e')
 		{
-		c++:
+		c++;
 		}
 	putchar(c);
 	c++;
