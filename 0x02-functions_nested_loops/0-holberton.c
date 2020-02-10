@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - print
+*main - print Holberton
 *Return: 0
 */
 int main(void)
