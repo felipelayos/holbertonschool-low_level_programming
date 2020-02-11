@@ -1,7 +1,6 @@
 #ifndef HOLBERTON
 #define HOLBERTON
 /* _putchar function */
-
 int _putchar(char c);
 
 /*Task 1 - Alphabet*/
@@ -19,6 +18,9 @@ int _isalpha(int c);
 /*Task 5 - Print sign */
 int print_sign(int n);
 
-/*Task 5 - Absolute value */
+/*Task 6 - Absolute value */
 int _abs(int);
+
+/*Task 7 - Last digit */
+int print_last_digit(int);
 #endif
