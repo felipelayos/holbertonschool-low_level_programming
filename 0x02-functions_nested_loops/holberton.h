@@ -10,6 +10,9 @@ void print_alphabet(void);
 /*Task 2 - Alphabet x10 */
 void print_alphabet_x10(void);
 
-/*Task 3 - Check lowercase characted */
+/*Task 3 - Check lowercase character */
 int _islower(int c);
+
+/*Task 4 - Check uppercase character */
+int _isalpha(int c);
 #endif
