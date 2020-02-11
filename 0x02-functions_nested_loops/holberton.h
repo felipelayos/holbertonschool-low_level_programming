@@ -23,4 +23,7 @@ int _abs(int);
 
 /*Task 7 - Last digit */
 int print_last_digit(int);
+
+/*Task 8 - Clock */
+void jack_bauer(void);
 #endif
