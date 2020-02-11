@@ -15,4 +15,7 @@ int _islower(int c);
 
 /*Task 4 - Check uppercase character */
 int _isalpha(int c);
+
+/*Task 5 - Print sign */
+int print_sign(int n);
 #endif
