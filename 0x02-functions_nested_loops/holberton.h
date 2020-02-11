@@ -18,4 +18,7 @@ int _isalpha(int c);
 
 /*Task 5 - Print sign */
 int print_sign(int n);
+
+/*Task 5 - Absolute value */
+int _abs(int);
 #endif
