@@ -1,4 +1,4 @@
-/* Prototypes */
+/*Prototypes */
 
 /* _putchar function */
 int _putchar(char c);
@@ -14,3 +14,6 @@ int mul(int a, int b);
 
 /* Task 3 - prints the numbers, from 0 to 9 */
 void print_numbers(void);
+
+/*Task 4 - prints 10 times the numbers, from 0 to 14 */
+void more_numbers(void);
