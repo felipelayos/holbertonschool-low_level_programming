@@ -23,3 +23,6 @@ void more_numbers(void);
 
 /* Task 6 - draws a straight line in the terminal */
 void print_line(int n);
+
+/* Task 7 - draws a diagonal line on the terminal. */
+void print_diagonal(int n);
