@@ -29,3 +29,6 @@ void print_diagonal(int n);
 
 /*Task 8 - prints a square - */
 void print_square(int size);
+
+/*Task 10 - triangles */
+void print_triangle(int size);
