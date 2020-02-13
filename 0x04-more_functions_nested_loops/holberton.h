@@ -20,3 +20,6 @@ void print_most_numbers(void);
 
 /* Task 5 - prints 10 times the numbers, from 0 to 14 */
 void more_numbers(void);
+
+/* Task 6 - draws a straight line in the terminal */
+void print_line(int n);
