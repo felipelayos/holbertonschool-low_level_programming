@@ -16,4 +16,4 @@ int mul(int a, int b);
 void print_numbers(void);
 
 /*Task 4 - prints 10 times the numbers, from 0 to 14 */
-void more_numbers(void);
+void print_most_numbers(void);
