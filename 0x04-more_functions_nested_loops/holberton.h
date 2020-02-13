@@ -11,3 +11,6 @@ int _isdigit(int c);
 
 /* Task 2 - multiplies two integers */
 int mul(int a, int b);
+
+/* Task 3 - prints the numbers, from 0 to 9 */
+void print_numbers(void);
