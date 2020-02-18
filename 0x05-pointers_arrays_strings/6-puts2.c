@@ -12,7 +12,6 @@ void puts2(char *str)
 	{
 		i++;
 	}
-	
 	size = i;
 
 	for (i = 0 ; i <= size - 1 ; i++)
