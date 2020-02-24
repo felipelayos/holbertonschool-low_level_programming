@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  *set_string - 
+  *set_string - function
   *@s: param
   *@to: param
   */
