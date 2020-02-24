@@ -7,7 +7,13 @@
   */
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0;
+	int i = 0, size = 0;
+
+	while (s[size])
+	{
+		size++;
+	}
+
 
 	for (i = 0 ; accept[i] ; i++)
 	{
@@ -15,6 +21,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			return (s + (i - 1));
 		}
+	}
+
+	if (s[i] == size)
+	{
+		return (s + (i - 1));
 	}
 	return ('\0');
 }
