@@ -11,7 +11,7 @@ int is_prime_number(int n)
 	int result;
 
 	result = primos(n, n / 2);
-	
+
 	if (result == 1)
 	{
 		return (0);
