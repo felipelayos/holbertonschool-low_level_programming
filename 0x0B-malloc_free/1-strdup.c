@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	
+
 	/*Size of the array to duplicate */
 	duplicatedArray = malloc(sizeof(char) * size);
 
