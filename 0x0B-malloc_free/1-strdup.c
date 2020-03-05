@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 
 	/*Size of the array to duplicate */
-	duplicatedArray = malloc(size * sizeof(char) + 1);
+	duplicatedArray = malloc(sizeof(char) *size);
 
 	/* Duplicate the array on the other array*/
 	for (i = 0 ; i <= size ; i++)
