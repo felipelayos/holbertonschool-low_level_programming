@@ -24,7 +24,7 @@ char *_strdup(char *str)
 
 	/*Size of the array to duplicate */
 	duplicatedArray = malloc(sizeof(char) * size + 1);
-	
+
 	/* Verify if the malloc work well */
 	if (duplicatedArray == '\0')
 	{
