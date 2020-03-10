@@ -12,13 +12,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog2;
 	int i;
-	
+
 	/* Asignar espacio de memoria para las copias*/
 	dog2 = malloc(sizeof(struct dog));
 	if (dog2 == NULL)
-	{
 		return (NULL);
-	}
 	/* Contar y asignar memoria para la copia del nombre */
 	for (i = 0 ; name[i] != '\0' ; i++)
 	{
@@ -35,7 +33,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 	}
 	(*dog2).owner = malloc(sizeof(char) * i + 1);
-
 	/*Validar que no falle */
 	if ((*dog2).owner == '\0')
 	{
@@ -43,7 +40,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog2);
 		return (NULL);
 	}
-
 	/*Crear las copias */
 	for (i = 0 ; name[i] != '\0' ; i++)
 		(*dog2).name[i] = name[i];
