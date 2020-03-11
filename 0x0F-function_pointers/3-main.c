@@ -9,8 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	char *op;
+	char *operator;
 	int num1, num2;
+	operator = argv[2];
 
 	/* Validar que entren 4 elements ./archivo, numero1, operacion, numero2 */
 	if (argc != 4)
@@ -19,8 +20,8 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	/* Validar que el operador sea correcto */
-	if ((argv[0] != '+' || argv[0] != '-' || argv[0] != '*' || argv[0] != '/' ||
-	argv[0] != '%') || argv[1] == '\0')
+	if ((operator[0] != '+' || operator[0] != '-' || operator[0] != '*' || operator[0] != '/' ||
+	operator[0] != '%') || operator[1] == '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -29,13 +30,12 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	/*Validar que no se vaya a dividir o sacar modulo por 0 */
-	if ((argv[0] == '/' || argv[0] == '%') && (num2 == 0))
+	if ((operator[0] == '/' || operator[0] == '%') && (num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 	/*Imprimir la operación segun haya ingresado el usuario*/
-	op = argv[2];
-	printf("%d\n", (*get_op_func(op))(num1, num2));
+	printf("%d\n", (*get_op_func(operator))(num1, num2));
 	return (0);
 }
