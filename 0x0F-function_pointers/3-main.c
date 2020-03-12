@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	operator = argv[2];
 	/* Validar que el operador sea correcto */
-	if ((!(operator[0] == '+' || operator[0] == '-' || operator[0] == '*' || 
+	if ((!(operator[0] == '+' || operator[0] == '-' || operator[0] == '*' ||
 	operator[0] == '/' || operator[0] == '%')) || operator[1] != '\0')
 	{
 		printf("Error\n");
