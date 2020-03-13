@@ -1,0 +1,1 @@
+Project to learn variadic functions
