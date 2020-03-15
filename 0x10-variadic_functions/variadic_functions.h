@@ -20,9 +20,9 @@ typedef struct type
 	void (*f)();
 } print_type;
 
-void p_char(va_list valist);
-void p_int(va_list valist);
-void p_float(va_list valist);
-void p_string(va_list valist);
+void p_char(va_list argument);
+void p_int(va_list argument);
+void p_float(va_list argument);
+void p_string(va_list argument);
 
 #endif
