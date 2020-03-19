@@ -19,10 +19,4 @@ typedef struct type
 	char *p;
 	void (*f)();
 } print_type;
-
-void p_char(va_list argument);
-void p_int(va_list argument);
-void p_float(va_list argument);
-void p_string(va_list argument);
-
 #endif
