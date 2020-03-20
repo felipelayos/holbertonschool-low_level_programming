@@ -23,6 +23,6 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 int _putchar(char c);
 int str_len(const char *str);
-void before_main(void);
+void before_main(void) __attribute__ ((constructor));
 
 #endif
