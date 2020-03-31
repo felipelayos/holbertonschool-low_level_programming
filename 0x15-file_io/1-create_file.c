@@ -13,21 +13,21 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, len, status;
+	int fd, status, len = 0;
 
 	if (!filename)
 		return (-1);
 
-	/* check if the file should be void or have content */
+	/*Check if the content exit to count it*/
 	if (text_content)
 	{
-		len = 0;
-		while (text_content)
+		while (text_content[len])
 		{
 			len++;
 		}
 	}
 
+	/*Open the file (filename), if doent exist create, and add 0600(permissions)*/
 	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
 	if (fd == -1)
@@ -37,9 +37,10 @@ int create_file(const char *filename, char *text_content)
 
 	/* write on the file and save the status to check if fails */
 	status = write(fd, text_content, len);
-	close(fd);
+	close(status);
 
-	if (status < 0) /* if write fails return -1 */
+	/* if write fails return -1 */
+	if (status < 0)
 	{
 		return (-1);
 	}
