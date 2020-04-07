@@ -1,1 +1,5 @@
-Project to learn how to programming using C
+
+---
+
+## Author
+* **Juan Felipe Rodriguez** - [felipelayos](https://github.com/felipelayos)
