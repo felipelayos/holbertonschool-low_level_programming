@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len - count the number 
+ * dlistint_len - count the number
  * @h: const dlistint_t
  * Return: size_t
  */
