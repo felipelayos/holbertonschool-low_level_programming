@@ -1,4 +1,3 @@
-
 #include "lists.h"
 
 /**
@@ -11,10 +10,16 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *node = malloc(sizeof(dlistint_t));
 
-	if (!head || !node)
+	if (!head)
 	{
 		return (NULL);
 	}
+
+	if (!node)
+	{
+		return (NULL);
+	}
+
 
 	if (*head)
 	{
