@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - entry point
- * @ht: const hash_table_t variable
- * @key: const char variable
+ * hash_table_get - hash table
+ * @ht: hash table variable
+ * @key: key
  *
- * Return: char variable
+ * Return: char
 */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
