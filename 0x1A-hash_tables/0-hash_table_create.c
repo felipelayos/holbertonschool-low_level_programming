@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_create - Create a hash table
  * @size: size
@@ -18,7 +17,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	table[0].array = calloc(size, sizeof(char *));
 	if (!table[0].array)
+	{
+		free(table);
 		return (NULL);
+	}
 
 	table[0].size = size;
 	return (table);
