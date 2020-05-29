@@ -7,21 +7,25 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *table;
-
-	if (!size)
-		return (NULL);
+	int i = 0;
 
 	table = malloc(sizeof(hash_table_t));
-	if (!table)
+	if (table == NULL)
 		return (NULL);
 
-	table[0].array = calloc(size, sizeof(char *));
-	if (!table[0].array)
+	table->size = size;
+	table->array = malloc(sizeof(void *) * size);
+	if (table->array == NULL)
 	{
 		free(table);
 		return (NULL);
 	}
 
-	table[0].size = size;
+	while (table->array[i])
+	{
+		table->array[i] = NULL;
+		i++;
+	}
+
 	return (table);
 }
