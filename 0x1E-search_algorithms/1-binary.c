@@ -1,12 +1,10 @@
-#include <stdio.h>
+#include "search_algos.h"
 /**
-* binary_search - searches for a value using the Binary search algorithm
-* @array: pointer of the first element of the array
-* @size: number of elements in the array
-* @value: value to search for
+* binary_search - searches for a value
 *
-* Description: This function searches for a value using Binary search algorithm
-* Return: it returns a int
+* @array: pointer of the array
+* @size: number of elements
+* @value: value to search
 */
 int binary_search(int *array, size_t size, int value)
 {
