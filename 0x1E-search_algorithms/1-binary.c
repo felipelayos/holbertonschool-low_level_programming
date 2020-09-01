@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include "search_algos.h"
 /**
 * binary_search - searches for a value
 *
 * @array: pointer of the array
 * @size: number of elements
 * @value: value to search
+* Description: searches for a value using  Jump search algorithm
+* Return: int
 */
 int binary_search(int *array, size_t size, int value)
 {
